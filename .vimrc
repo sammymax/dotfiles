@@ -6,10 +6,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'jnurmine/Zenburn'
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
 Plugin 'xuhdev/SingleCompile'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All plugins must be added before the following line
 call vundle#end()            " required
@@ -40,6 +42,12 @@ let g:solarized_termcolors=256
 set t_Co=256
 set background=dark
 colorscheme monokai
+
+set ttimeoutlen=50
+set laststatus=2
+let g:airline_theme = 'powerlineish'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 imap <F1> <Esc>:SCCompileRun<cr>
 nmap <F1>      :SCCompileRun<cr>
