@@ -18,8 +18,6 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set autoindent
-set textwidth=129
-" set autoindent
 set fileformat=unix
 set encoding=utf-8
 
@@ -30,12 +28,13 @@ au Filetype * let &l:shiftwidth = s:tabwidth
 " au Filetype * set expandtab
 " au Filetype * let let &l:softtabstop = s:tabwidth
 " Uncomment above for soft, below for hard tabs
-au Filetype * let &l:softtabstop = 0
-au Filetype * set noexpandtab
+" au Filetype * let &l:softtabstop = 0
+" au Filetype * set noexpandtab
 
 syntax on
 set relativenumber
 set number
+set noswapfile
 set mouse=a
 
 let g:solarized_termcolors=256

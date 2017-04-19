@@ -1,0 +1,4 @@
+URxvt*cursorColor: #f8f8f0
+URxvt*cursorBlink: true
+URxvt.perl-ext-common: default,tabbed
+URxvt*font: xft:DejaVu Sans Mono:style=Book:pixelsize=12:antialias=true
