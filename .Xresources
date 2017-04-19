@@ -1,5 +1,9 @@
 URxvt*cursorColor: #ff0000
 URxvt*cursorBlink: true
+
 URxvt.perl-ext-common: default,tabbed
+
 URxvt*font: xft:DejaVu Sans Mono:style=Book:pixelsize=12:antialias=true
 URxvt*letterSpace: -1
+
+URxvt*saveLines:10000
