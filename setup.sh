@@ -2,7 +2,7 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo add-apt-repository ppa:klaus-vormweg/awesome
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install vim htop openssh-server git
+sudo apt-get install vim htop openssh-server git tmux
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
