@@ -41,6 +41,14 @@ let g:solarized_termcolors=256
 set t_Co=256
 set background=dark
 colorscheme monokai
+set incsearch
+set hlsearch
+hi Search ctermbg=yellow
+hi Search ctermfg=black
+hi Search guibg=yellow
+hi Search guifg=black
+hi IncSearch ctermbg=magenta
+hi IncSearch guibg=magenta
 
 set ttimeoutlen=50
 set laststatus=2
