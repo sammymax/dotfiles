@@ -1,6 +1,10 @@
 set nocompatible              " required
 filetype off                  " required
 
+if has("mouse_urxvt")
+	set ttymouse=urxvt
+end
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
