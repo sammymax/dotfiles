@@ -250,7 +250,9 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
-    awful.key({ modkey,           }, "F1",     function() awful.util.spawn("google-chrome --incognito") end,
+    awful.key({                   }, "Print",  function() awful.util.spawn("scrot") end,
+              {description="Screenshot"}),
+    awful.key({ modkey,           }, "F1",     function() awful.util.spawn("firefox --private") end,
               {description="Incognito browser"}),
     awful.key({ modkey,           }, "F2",     function() awful.util.spawn("pcmanfm") end,
               {description="File browser"}),
