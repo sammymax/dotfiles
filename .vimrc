@@ -9,7 +9,14 @@ end
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'gmarik/Vundle.vim'
+" jsx highlighting + its js highlighting dependency
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+" use jsx plugin on .js files too
+let g:jsx_ext_required = 0
+
 " Plugin 'jnurmine/Zenburn'
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
