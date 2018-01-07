@@ -19,6 +19,7 @@ then
 	echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 	echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 	echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+	echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 	source ~/.bashrc
 	git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 	sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
