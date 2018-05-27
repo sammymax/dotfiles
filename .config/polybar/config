@@ -48,9 +48,9 @@ font-1 = "Font Awesome:style=Solid:pixelsize=10;1"
 ; iconfont/codepoints within the zip gives unicode mapping
 font-2 = "Material Icons:pixelsize=10;1"
 
-modules-left = bspwm i3
-modules-center = mpd
-modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-left = i3
+modules-center = date
+modules-right = volume wlan memory powermenu
 
 tray-position = right
 tray-padding = 2
