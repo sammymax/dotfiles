@@ -43,8 +43,10 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-1 = "Font Awesome:style=Solid:pixelsize=10;1"
+; get from https://github.com/google/material-design-icons/releases
+; iconfont/codepoints within the zip gives unicode mapping
+font-2 = "Material Icons:pixelsize=10;1"
 
 modules-left = bspwm i3
 modules-center = mpd
