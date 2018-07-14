@@ -1,2 +1,3 @@
-rofi.modi: drun
-rofi.theme: ~/.config/rofi/arthur.rasi
+rofi.modi: drun,run,ssh,power:~/.config/rofi/rofi-power.sh
+rofi.theme: ~/.config/rofi/nord.rasi
+rofi.sidebar-mode: true
