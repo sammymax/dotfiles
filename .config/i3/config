@@ -113,7 +113,7 @@ bindsym $mod+F4 workspace $ws4
 
 bindsym $mod+1 exec "firefox"
 bindsym $mod+2 exec "pcmanfm"
-bindsym $mod+3 exec "keepass2"
+bindsym $mod+3 exec "keepassxc"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
