@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get upgrade
 
@@ -7,6 +6,7 @@ read -p "Install vim, htop, ssh, 7z, tmux, and git? [Y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+	sudo add-apt-repository ppa:git-core/ppa
 	sudo apt-get install vim htop openssh-server git tmux p7zip-full
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
