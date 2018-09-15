@@ -3,6 +3,13 @@ filetype off                  " required
 
 if has("mouse_urxvt")
 	set ttymouse=urxvt
+	" use red cursor for contrast against dark background
+	silent !echo -ne "\033]12;red\007"
+	autocmd VimLeave * silent !echo -ne "\033]12;black\007"
+
+	" use blinking vertical bar in insert mode, blinking block otherwise
+	let &t_SI .= "\<Esc>[5 q"
+	let &t_EI .= "\<Esc>[1 q"
 end
 
 " set the runtime path to include Vundle and initialize
