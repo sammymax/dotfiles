@@ -1,7 +1,7 @@
 set nocompatible              " required
 filetype off                  " required
 
-if has("mouse_urxvt")
+if has("mouse_urxvt") && $TERM=='rxvt-unicode-256color'
 	set ttymouse=urxvt
 	" use red cursor for contrast against dark background
 	silent !echo -ne "\033]12;red\007"
@@ -10,6 +10,8 @@ if has("mouse_urxvt")
 	" use blinking vertical bar in insert mode, blinking block otherwise
 	let &t_SI .= "\<Esc>[5 q"
 	let &t_EI .= "\<Esc>[1 q"
+else
+	set ttymouse=xterm2
 end
 
 " set the runtime path to include Vundle and initialize
