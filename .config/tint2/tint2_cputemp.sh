@@ -10,4 +10,3 @@ done
 
 echo $maxtemp | tr -d '[:space:]'
 echo "°C"
-#printf '%8s\n' "$maxtemp"
