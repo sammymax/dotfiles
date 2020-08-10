@@ -96,7 +96,7 @@ let g:airline_right_sep = ''
 
 imap <F1> <Esc>:SCCompileRun<cr>
 nmap <F1>      :SCCompileRun<cr>
-imap <F2> <Esc>:SCCompileRun -std=c++11 -O2 -o $(FILE_TITLE)$<cr>
-nmap <F2>      :SCCompileRun -std=c++11 -O2 -o $(FILE_TITLE)$<cr>
-imap <F3> <Esc>:SCCompileRun -std=c++11 -Ofast -march=native -o $(FILE_TITLE)$<cr>
-nmap <F3>      :SCCompileRun -std=c++11 -Ofast -march=native -o $(FILE_TITLE)$<cr>
+imap <F2> <Esc>:SCCompileRun -std=c++17 -g -O2 -o $(FILE_TITLE)$<cr>
+nmap <F2>      :SCCompileRun -std=c++17 -g -O2 -o $(FILE_TITLE)$<cr>
+imap <F3> <Esc>:SCCompileRun -std=c++17 -g -Ofast -march=native -o $(FILE_TITLE)$<cr>
+nmap <F3>      :SCCompileRun -std=c++17 -g -Ofast -march=native -o $(FILE_TITLE)$<cr>
