@@ -116,11 +116,11 @@
 
 #sidegroup {
     expand: false;
-    children: [ sidebar, dummy ];
+    children: [ mode-switcher, dummy ];
     background-color: @sidebarcolor;
 }
 
-#sidebar {
+#mode-switcher {
     orientation: vertical;
     expand: false;
     width: 200px;
