@@ -11,7 +11,7 @@ then
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
-read -p "Install pyenv and pyenv-virtualenv? [Y/n] " -r
+read -p "Install pyenv? [Y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -19,9 +19,7 @@ then
 	echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 	echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 	echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-	echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 	source ~/.bashrc
-	git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 	sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 		libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 		xz-utils tk-dev
